@@ -1,0 +1,1 @@
+# jams-vanilla-content
