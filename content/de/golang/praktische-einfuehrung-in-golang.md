@@ -1,14 +1,14 @@
 <b-nova-content-header>
-version: 6
 title: Praktische Einführung in Go
 description: Go ist eine beliebte Sprache im Cloud-Umfeld. Go könnte schon bald der neue Standard für Microservices und Container-fähigen Applikationen sein.
-ogImage: 20210526-og-apache-kafka.png
-date: 2020-10-20
+permalink: /home/content/praktische-einfuehrung-in-go
+ogImage: 20210526-og-go.png
+publishDate: 2020-10-20
 author: rschneider
 categories: cloud, tech
 tags: golang, microservices, handson, foss
 showComments: true
-publish: true
+isPublished: true
 </b-nova-content-header>
 
 <a href="https://golang.org/" target="_blank">Go</a> ist eine beliebte Sprache im Cloud-Umfeld. Viele bekannte

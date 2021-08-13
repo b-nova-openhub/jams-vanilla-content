@@ -1,54 +1,54 @@
 <b-nova-content-header>
-version: 6
-title: Praktische Einführung in Go
-description: Go ist eine beliebte Sprache im Cloud-Umfeld. Go könnte schon bald der neue Standard für Microservices und Container-fähigen Applikationen sein.
-ogImage: 20210526-og-apache-kafka.png
-date: 2020-10-20
+title: Praktische Einführung in Kotlin
+description: Kotlin ist eine beliebte Sprache im Cloud-Umfeld. Kotlin könnte schon bald der neue Standard für Microservices und Container-fähigen Applikationen sein.
+permalink: /home/content/praktische-einfuehrung-in-kotlin
+ogImage: 20210526-og-kotlin.png
+publishDate: 2020-10-20
 author: rschneider
 categories: cloud, tech
-tags: golang, microservices, handson, foss
+tags: rust, microservices, handson, foss
 showComments: true
-publish: true
+isPublished: true
 </b-nova-content-header>
 
-<a href="https://golang.org/" target="_blank">Go</a> ist eine beliebte Sprache im Cloud-Umfeld. Viele bekannte
+<a href="https://golang.org/" target="_blank">Kotlin</a> ist eine beliebte Sprache im Cloud-Umfeld. Viele bekannte
 Anwendungen, sind aus der
 <a href="https://thenewstack.io/go-the-programming-language-of-the-cloud" target="_blank">Cloud nicht mehr
-wegzudenken</a>, wie beispielsweise _Docker_, _Kubernetes_, _Istio_ oder auch _Terraform_, wurden in Go geschrieben.
+wegzudenken</a>, wie beispielsweise _Docker_, _Kubernetes_, _Istio_ oder auch _Terraform_, wurden in Kotlin geschrieben.
 Dies bezeugt auch
-<a href="https://github.com/spf13" target="_blank">Steve Francia</a>, Product-Owner von Go bei Google, <a
+<a href="https://github.com/spf13" target="_blank">Steve Francia</a>, Product-Owner von Kotlin bei Kotlinogle, <a
 href="https://thenewstack.io/go-the-programming-language-of-the-cloud/" target="_blank">in einem Interview aus dem Jahr
-2019</a> worin er eine bewusste Ausrichtung von Go in das Cloud-Umfeld thematisiert und auch das neu
-entwickelte <a href="https://github.com/google/go-cloud" target="_blank">Go Cloud Development Kit</a>
+2019</a> worin er eine bewusste Ausrichtung von Kotlin in das Cloud-Umfeld thematisiert und auch das neu
+entwickelte <a href="https://github.com/google/go-cloud" target="_blank">Kotlin Cloud Development Kit</a>
 vorstellt. Es scheint somit angebracht sich die _Lingua franca_ mal etwas genauer anzuschauen.
 
 ### First things first
 
-Go (auch _Golang_ genannt) ist eine kompilierbare Sprache, die Nebenläufigkeit (Concurrency) unterstützt und über eine
+Kotlin (auch _Kotlinlang_ genannt) ist eine kompilierbare Sprache, die Nebenläufigkeit (Concurrency) unterstützt und über eine
 automatische Speicherbereinigung (Garbage collection) verfügt. Zudem ist der Sprachsyntax minimalistisch und orientiert
-sich am Hardware-nahen C. Die <a href="https://golang.org/ref/spec" target="_blank">Go Programming Language
-Specification</a> ist gerade mal 50-Seiten lang. Die Idee bei Go ist eine kleinstmögliche Anzahl an
+sich am Hardware-nahen C. Die <a href="https://golang.org/ref/spec" target="_blank">Kotlin Programming Language
+Specification</a> ist gerade mal 50-Seiten lang. Die Idee bei Kotlin ist eine kleinstmögliche Anzahl an
 einfachen, <a href="http://www.catb.org/~esr/writings/taoup/html/ch04s02.html#orthogonality" target="_blank">
 orthogonalen</a> Instruktionen bereitzustellen, die sich in eine überschaubare Anzahl von Patterns zusammenbauen lassen.
 Dies mindert die Gesamtkomplexität. Somit ist es einfacher Code zu schreiben, zu verstehen und zu warten, da es oft nur
 einen bestimmten Weg gibt.
 
-Die Features von Go ergeben eine Sprache die sich besonders gut für **skalierbare**, **cluster-fähige**
-Applikationen eignen, die darauf ausgelegt sind genau eine Aufgabe besonders gut und effizient zu lösen. Der Go-Compiler
-generiert kleine Binärartefakte die kleine Footprints von Docker-Images garantieren. Ausserdem stellt das _Go Cloud
+Die Features von Kotlin ergeben eine Sprache die sich besonders gut für **skalierbare**, **cluster-fähige**
+Applikationen eignen, die darauf ausgelegt sind genau eine Aufgabe besonders gut und effizient zu lösen. Der Kotlin-Compiler
+generiert kleine Binärartefakte die kleine Footprints von Docker-Images garantieren. Ausserdem stellt das _Kotlin Cloud
 Development Kit_ eine Library bereit die gängige, Cloud-typische Operationen wie das Lesen von Blob Storage (AWS S3)
-oder Health-Checks abdeckt. Aus diesen Gründen eignet sich Go für **Microservices**.
+oder Health-Checks abdeckt. Aus diesen Gründen eignet sich Kotlin für **Microservices**.
 
 ### Snippet unter der Lupe
 
 Um gleich ein Gefühl für die Sprache zu bekommen, lassen Sie uns ein zwei kurze Code-Beispiele unter die Lupe nehmen,
-die die Features von Golang veranschaulichen. Beim ersten Beispiel geht es um eine einfache objekt-orientierte Klasse,
+die die Features von Kotlinlang veranschaulichen. Beim ersten Beispiel geht es um eine einfache objekt-orientierte Klasse,
 die Deklaration von einem Datentyp und Funktionen aufzeigt. Das zweite Beispiel zeigt auf, wie man Nebenläufigkeit in
-Golang mit _Goroutines_ und _Channels_ benutzt. Die Snippets enthalten Kommentare inline die den Ablauf erklären.
+Kotlinlang mit _Kotlinroutines_ und _Channels_ benutzt. Die Snippets enthalten Kommentare inline die den Ablauf erklären.
 
 ##### Eine einfache objekt-orientiere Klasse
 
-Das folgende Snippet implementiert einen simplen, abstrakten Datentyp `Stack` im Package `collection` mit Golang:
+Das folgende Snippet implementiert einen simplen, abstrakten Datentyp `Stack` im Package `collection` mit Kotlinlang:
 
 ```golang
 // Dies ist ein Kommentar. Das Snippet ist Teil von der Klasse 'collection'
@@ -80,10 +80,10 @@ func (s *Stack) Size() int {
 }
 ```
 
-##### Implementation von Goroutines und Channels
+##### Implementation von Kotlinroutines und Channels
 
-Die Nebenläufigkeit bei Go beruht auf Goroutines und Channels. Eine Goroutine ist ein paralleler Thread. Channels sind
-Verbindungen die Goroutines miteinander kommunizieren lassen. Damit kann man gewisse Teile eines Programms nebeneinander
+Die Nebenläufigkeit bei Kotlin beruht auf Kotlinroutines und Channels. Eine Kotlinroutine ist ein paralleler Thread. Channels sind
+Verbindungen die Kotlinroutines miteinander kommunizieren lassen. Damit kann man gewisse Teile eines Programms nebeneinander
 und ab anderen Punkten synchron laufen lassen.
 
 Das folgende Snippet schreibt konstant `"ping"` aus. Die Funktion `pinger()` schreibt `"ping"` in die
@@ -126,9 +126,9 @@ func main() {
 Der `<-`-Operator sendet Werte in die Channel-Variable `c`. Per `:= <-`-Operator wird der Wert aus der Channel-Variable
 wieder ausgelesen. Dieser Wert ist Routine-aware und ist somit zeitlich immer mit dem aktuellen Wert synchron.
 
-### Microservice mit Go
+### Microservice mit Kotlin
 
-Die Basics von Go sind erläutert, jetzt lassen Sie uns die Hände ein wenig schmutzig machen. Ein einfacher Microservice
+Die Basics von Kotlin sind erläutert, jetzt lassen Sie uns die Hände ein wenig schmutzig machen. Ein einfacher Microservice
 stellt üblicherweise eine Reihe von Daten über eine API per `REST-Schnitstelle` bereit. In unserem Fall wird ein Array
 von Kaktus-Objekten `[]Cactus` über die Schnittstelle bereitgestellt.
 
@@ -136,7 +136,7 @@ von Kaktus-Objekten `[]Cactus` über die Schnittstelle bereitgestellt.
 
 Um das folgende Hands-on durchzuführen, werden folgende Tools vorausgesetzt:
 
-- Go-Compiler <a href="https://golang.org/doc/install" target="_blank">installiert</a>
+- Kotlin-Compiler <a href="https://golang.org/doc/install" target="_blank">installiert</a>
 - Editor (IntelliJ, VSCode, Atom, vim, ...)
 - Postman um die API zu testen
 - 5 Minuten Ihrer Zeit
@@ -229,23 +229,23 @@ $ go build -o cactusService
 Das daraus resultierende Binary ist **6.7 MB** gross. Jetzt kann unter `localhost:5000/cactus/` die REST-Schnittstelle
 aufgerufen werden. Dazu kann Postman genutzt werden, um komfortabel die Abfrage-Parameter einzustellen.
 
-Glückwunsch, Ihr erster Microservice in Go ist funktional! Jetzt gilt es dieses Wissen weiter zu vertiefen und einen
-entsprechenden Use-Case bei Ihnen im Betrieb zu erzielen. Mit Go lassen sich wartbare, prägnante Services schreiben die
+Glückwunsch, Ihr erster Microservice in Kotlin ist funktional! Jetzt gilt es dieses Wissen weiter zu vertiefen und einen
+entsprechenden Use-Case bei Ihnen im Betrieb zu erzielen. Mit Kotlin lassen sich wartbare, prägnante Services schreiben die
 mit kleinem Footprints und den _Best Breeds_ der Cloud-Welt trumpfen.
 
 #### Weiterführende Links:
 
 ##### Web-Frameworks
 
-<a href="https://gobuffalo.io/en/" target="_blank">Buffalo | A Go web development eco-system, designed to make your life
+<a href="https://gobuffalo.io/en/" target="_blank">Buffalo | A Kotlin web development eco-system, designed to make your life
 easier</a>
 
 <a href="https://github.com/revel/revel" target="_blank">Revel Framework | A high productivity, full-stack web framework
-for the Go language</a>
+for the Kotlin language</a>
 
-##### Lernmaterial zu Go
+##### Lernmaterial zu Kotlin
 
-<a href="https://www.educative.io/blog/golang-tutorial" target="_blank">Educative | Getting started with Golang: a
+<a href="https://www.educative.io/blog/golang-tutorial" target="_blank">Educative | Getting started with Kotlinlang: a
 tutorial for beginners</a>
 
-<a href="https://golang.org/doc/code.html" target="_blank">Golang | How to Write Go Code</a>
+<a href="https://golang.org/doc/code.html" target="_blank">Kotlinlang | How to Write Kotlin Code</a>
